@@ -23,7 +23,6 @@ A digitally controlled buck-converter based DC power supply built using the STM3
 ## Software
 
 - STM32CubeIDE
-- HAL Drivers
 - C Programming
 
 ## Control Strategy
