@@ -1,9 +1,9 @@
 # STM32F407 PID Controlled DC Power Supply
 
-A digitally controlled buck-converter based DC power supply built using the STM32F407 microcontroller. The output voltage is regulated using a closed-loop PID controller with ADC feedback synchronized to the PWM switching cycle.
+A digitally controlled buck-converter based DC power supply built using the STM32F407 microcontroller. The output voltage and current is regulated using a closed-loop PID controller with ADC feedback synchronized to the PWM switching cycle.
 
 ## Features
-- Closed-loop PID voltage regulation
+- Closed-loop PID voltage and current regulation
 - STM32F407 based controller
 - Center-aligned PWM generation
 - ADC sampling synchronized with PWM
@@ -15,15 +15,17 @@ A digitally controlled buck-converter based DC power supply built using the STM3
 
 - STM32F407 Discovery Board
 - Buck Converter Topology for DC-DC Conversion
+- IRFB4227 MOSFET controlled using PWM
+- 30N60 Double Diode used in the buck converter circuit
 - Isolated MOSFET Driver (TLP250)
 - Voltage Divider Feedback Network
-- Op amp based Current to Voltage amplifier
-- Output Capacitor and Inductor
+- Shunt amplifier for current sensing
+- Inductor and capacitor for output filtering
 
 ## Software
 
 - STM32CubeIDE
-- C Programming
+- Embedded C Programming
 
 ## Control Strategy
 
